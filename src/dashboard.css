@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+}
+.video-player {
+  height: 60vh;
+  width: 80vh;
+  border: solid;
+  border-color: black;
+  background: linear-gradient(to top, black, rgb(53, 1, 1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-outer {
+  color: green;
+  background: linear-gradient(black, rgb(46, 1, 1), black);
+  border-top: solid;
+  border-color: darkred;
+  padding: 5vh;
+  display: flex;
+  min-width: 300px;
+  height: 80vh;
+}
+iframe {
+  height: 40vh;
+  width: 60vh;
+  background: linear-gradient(black 50%, blue);
+  border: none;
+}
+
+.video-search {
+  width: 60vh;
+  font-size: 12pt;
+  padding: 10px;
+  margin-top: 2vh;
+  border-radius: 5px;
+  height: 7vh;
+}
+.video-search-form {
+  display: flex;
+  justify-content: center;
+  width: 80vh;
+  padding: auto;
+}
+
+.video-search-button {
+  height: 7vh;
+  width: 20vh;
+  background-color: red;
+  font-size: 12pt;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-top: 2vh;
+}
+.video-search-button:hover {
+  background-color: darkred;
+}
+
+.dashboard-left {
+  float: left;
+}
+.dashboard-right {
+  float: left;
+  border: solid;
+  border-color: black;
+  height: 100%;
+  width: 100%;
+  margin-left: 5vh;
+  min-width: 300px;
+}
+.search-results {
+  overflow-y: scroll;
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 1.5vh;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2vh;
+  margin: auto;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.search-item > img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 3vh 3vh 3vh black;
+  z-index: 4;
+}
+
+.search-item > img {
+  border-radius: 5%;
+  width: 80%;
+  box-shadow: 2vh 2vh 2vh black;
+  transition-timing-function: ease-out;
+  transition-duration: 0.5s;
+}
+
+.search-item {
+  margin-top: 2vh;
+  width: 80%;
+}
+
+@media screen and (max-width: 900px) {
+  .dashboard-right {
+    width: 100%;
+    position: relative;
+    height: 80vh;
+    margin: auto;
+  }
+  .dashboard-outer {
+    flex-direction: column;
+    height: 160vh;
+    justify-content: center;
+  }
+  .dashboard-left {
+    margin: auto;
+    width: 100%;
+  }
+}

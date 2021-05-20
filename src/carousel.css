@@ -1,0 +1,70 @@
+.carousel {
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .get-started {
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+  }
+  
+  .watch {
+    font-size: 20pt;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .email-enter {
+    height: 20vh;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .get-started-email {
+    width: 70vh;
+    height: 10vh;
+    font-size: 15pt;
+    border-radius: 5px;
+    border: solid;
+    border-color: white;
+    padding: 2vh;
+  }
+  
+  .carousel-button {
+    width: 30vh;
+    height: 10vh;
+    font-size: 15pt;
+    background-color: red;
+    color: white;
+  }
+  
+  .watch {
+    font-size: 17pt;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 5vh;
+  }
+  .unlimited {
+    font-size: 40pt;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 5vh;
+  }
+  
+  @media screen and (max-width: 600px) {
+    form > div {
+      width: 100%;
+    }
+  }
+  

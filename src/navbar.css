@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+.topnav {
+  padding: 3px;
+  height: 20vh;
+  display: flex;
+  width: 100%;
+}
+
+.logo {
+  float: left;
+  width: 50%;
+  font-size: 25pt;
+  color: red;
+  font-weight: bold;
+  font-display: solid;
+}
+.logo > img {
+  height: 100px;
+}
+.dropdown {
+  float: right;
+  width: 50%;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.username {
+  position: absolute;
+  right: 20px;
+  color: white;
+  float: right;
+}
+
+select,
+.signin-button {
+  height: 40px;
+  color: white;
+  font-size: 12pt;
+  position: absolute;
+  border-radius: 5px;
+  width: 80px;
+  border-width: 0px;
+}
+.signin-button {
+  background-color: red;
+  right: 20px;
+}
+
+select {
+  border: solid;
+  border-width: 1px;
+  background: transparent;
+  right: 120px;
+}
+select:hover {
+  cursor: pointer;
+}
+select option {
+  background-color: gray;
+}
+button:hover {
+  background-color: darkred;
+  cursor: pointer;
+}

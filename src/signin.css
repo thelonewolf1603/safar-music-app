@@ -1,0 +1,69 @@
+.signin {
+    height: 80vh;
+    width: 100%;
+    
+    justify-content: center;
+    display: flex;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .signin-box {
+    backdrop-filter: blur(15px) ;
+    height: 75vh;
+    width: 75vh;
+    margin-top: 0;
+    color: white;
+    border: solid;
+    border-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+  }
+  .signup-heading{
+    font-size: 25pt;
+    margin-top: 5vh;
+  }
+  
+  .signup-email,
+  .signup-password,.signup-button {
+    width: 60vh;
+    height: 10vh;
+    float: none;
+    justify-content: space-around;
+    border-radius: 10px;
+    font-size: 12pt;
+    padding-left: 10px;
+    margin-top: 2vh;
+  }
+  
+  .signup-button {
+    background: red;
+    margin-top: 5vh;
+    color: white;
+  }
+  .signup-button:hover {
+    background: darkred;
+  }
+  
+  .signup-form {
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .password-match{
+    color: green;
+    display: block;
+  }
+
+  .password-no-match{
+    color: red;
+    display: block;
+  }
